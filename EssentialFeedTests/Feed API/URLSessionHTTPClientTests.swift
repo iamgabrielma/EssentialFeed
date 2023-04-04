@@ -32,7 +32,6 @@ final class URLSessionHTTPClientTests: XCTestCase {
         let sut = URLSessionHTTPClient(session: session)
 
         sut.get(from: url)
-//        task.resume()
 
         XCTAssertEqual(task.resumeCallCount, 1)
     }
