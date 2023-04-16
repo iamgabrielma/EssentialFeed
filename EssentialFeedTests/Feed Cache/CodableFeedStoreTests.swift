@@ -117,8 +117,6 @@ final class CodableFeedStoreTests: XCTestCase {
     
     public func test_retrieve_deliversFailureOnRetrievalError() {
         let sut = makeSUT()
-        let feed = uniqueImageFeed().local
-        let timestamp = Date()
         
         try! "invalid data".write(to: testSpecificStoreURL(), atomically: false, encoding: .utf8)
         
