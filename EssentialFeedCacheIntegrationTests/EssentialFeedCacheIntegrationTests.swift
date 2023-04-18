@@ -13,9 +13,15 @@ final class EssentialFeedCacheIntegrationTests: XCTestCase {
         let sut = makeSUT()
         
         let exp = expectation(description: "Wait for load completion")
-        sut.load { _ in }
+        sut.load { result in
+            switch result {
+            case let .success(imageFeed):
+                XCTAssertEqual(imageFeed, [])
+            default:
+                XCTFail("Expected empty image feed, got \(result) instead")
+            }
+        }
         exp.fulfill()
-        
         wait(for: [exp], timeout: 1.0)
     }
 }
