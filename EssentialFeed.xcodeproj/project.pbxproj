@@ -61,6 +61,7 @@
 		68E42EB529FE4ACB00D27A8E /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EB429FE4ACB00D27A8E /* FeedImageCellController.swift */; };
 		68E42EB829FE500B00D27A8E /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EB729FE500B00D27A8E /* FeedUIComposer.swift */; };
 		68E42EBC29FE738C00D27A8E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EBB29FE738C00D27A8E /* FeedViewModel.swift */; };
+		68E42EBE29FEAAF300D27A8E /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EBD29FEAAF300D27A8E /* FeedImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		68E42EB429FE4ACB00D27A8E /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		68E42EB729FE500B00D27A8E /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		68E42EBB29FE738C00D27A8E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		68E42EBD29FEAAF300D27A8E /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				68E42EBB29FE738C00D27A8E /* FeedViewModel.swift */,
+				68E42EBD29FEAAF300D27A8E /* FeedImageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				6837FD7029FAA8A9003B8EDD /* UIView+Shimmering.swift in Sources */,
 				6837FD6C29F51D9C003B8EDD /* FeedViewController.swift in Sources */,
 				6837FD6E29F52D25003B8EDD /* FeedImageCell.swift in Sources */,
+				68E42EBE29FEAAF300D27A8E /* FeedImageViewModel.swift in Sources */,
 				68E42EB529FE4ACB00D27A8E /* FeedImageCellController.swift in Sources */,
 				68E42EBC29FE738C00D27A8E /* FeedViewModel.swift in Sources */,
 				68E42EB829FE500B00D27A8E /* FeedUIComposer.swift in Sources */,
