@@ -12,7 +12,7 @@ final class FeedRefreshViewController: NSObject {
     
     private(set) lazy var view: UIRefreshControl = {
         let view = UIRefreshControl()
-        view.addTarget(self, action: #selector(load), for: .valueChanged)
+        view.addTarget(self, action: #selector(refresh), for: .valueChanged)
         return view
     }()
     
@@ -24,7 +24,7 @@ final class FeedRefreshViewController: NSObject {
     
     var onRefresh: (([FeedImage]) -> Void)?
 
-    @objc func load() {
+    @objc func refresh() {
         view.beginRefreshing()
         feedLoader.load { [weak self] result in
             if let feed = try? result.get() {
@@ -59,7 +59,7 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
             self?.tableModel = feed
         }
         tableView.prefetchDataSource = self
-        refreshController?.load()
+        refreshController?.refresh()
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
