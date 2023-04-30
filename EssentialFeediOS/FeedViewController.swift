@@ -55,8 +55,8 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
         super.viewDidLoad()
 
         refreshControl = refreshController?.view
-        refreshController?.onRefresh = { feed in
-            self.tableModel = feed
+        refreshController?.onRefresh = { [weak self] feed in
+            self?.tableModel = feed
         }
         tableView.prefetchDataSource = self
         refreshController?.load()
