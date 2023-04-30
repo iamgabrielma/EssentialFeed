@@ -9,6 +9,7 @@ import UIKit
 import EssentialFeed
 
 final public class FeedUIComposer {
+    private init() {}
     public static func feedComposedWith(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader) -> FeedViewController {
         let refreshController = FeedRefreshViewController(feedLoader: feedLoader)
         let feedController = FeedViewController(refreshController: refreshController)
