@@ -62,6 +62,7 @@
 		68E42EB829FE500B00D27A8E /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EB729FE500B00D27A8E /* FeedUIComposer.swift */; };
 		68E42EBC29FE738C00D27A8E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EBB29FE738C00D27A8E /* FeedViewModel.swift */; };
 		68E42EBE29FEAAF300D27A8E /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EBD29FEAAF300D27A8E /* FeedImageViewModel.swift */; };
+		68E42EC129FED87600D27A8E /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EC029FED87600D27A8E /* FeedPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		68E42EB729FE500B00D27A8E /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		68E42EBB29FE738C00D27A8E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		68E42EBD29FEAAF300D27A8E /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
+		68E42EC029FED87600D27A8E /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +278,7 @@
 		6837FD5429F3192A003B8EDD /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				68E42EBF29FED84B00D27A8E /* Feed Presentation */,
 				68E42EBA29FE738000D27A8E /* Models */,
 				68E42EAF29FE3C8C00D27A8E /* Feed Image Loader */,
 				68E42EAE29FE3C7500D27A8E /* Feed UI */,
@@ -440,6 +443,14 @@
 				68E42EBD29FEAAF300D27A8E /* FeedImageViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		68E42EBF29FED84B00D27A8E /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				68E42EC029FED87600D27A8E /* FeedPresenter.swift */,
+			);
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -687,6 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E42EC129FED87600D27A8E /* FeedPresenter.swift in Sources */,
 				68E42EB129FE3CB800D27A8E /* FeedImageDataLoader.swift in Sources */,
 				68E42EB329FE44C100D27A8E /* FeedRefreshViewController.swift in Sources */,
 				6837FD7029FAA8A9003B8EDD /* UIView+Shimmering.swift in Sources */,
