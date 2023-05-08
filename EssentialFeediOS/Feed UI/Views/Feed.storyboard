@@ -120,6 +120,7 @@ Location</string>
                                         <constraint firstItem="yxc-SD-uf5" firstAttribute="top" secondItem="inJ-M7-z7L" secondAttribute="topMargin" priority="999" constant="6" id="osP-VE-C3U"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="FeedImageCell"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
