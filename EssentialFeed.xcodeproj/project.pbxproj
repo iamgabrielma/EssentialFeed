@@ -291,7 +291,6 @@
 				68E42EAF29FE3C8C00D27A8E /* Feed Image Loader */,
 				68E42EAE29FE3C7500D27A8E /* Feed UI */,
 				6837FD6D29F52D25003B8EDD /* FeedImageCell.swift */,
-				6837FD6F29FAA8A9003B8EDD /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -311,6 +310,7 @@
 				685B4B8F2A091C86004DD0AC /* Feed.storyboard */,
 				685B4B912A091D96004DD0AC /* Feed.xcassets */,
 				682D2A4F2A0A90B100B29BD6 /* UITableView+Dequeuing.swift */,
+				6837FD6F29FAA8A9003B8EDD /* UIView+Shimmering.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
