@@ -6,6 +6,7 @@
 //
 
 import EssentialFeed
+import Foundation
 
 protocol FeedLoadingView {
     func display(_ viewModel: FeedLoadingViewModel)
@@ -20,7 +21,7 @@ final class FeedPresenter {
     private let loadingView: FeedLoadingView
     
     static var title: String {
-        return "My Feed"
+        NSLocalizedString("FEED_VIEW_TITLE", tableName: "Feed", bundle: Bundle(for: FeedPresenter.self), comment: "Title for the Feed view")
     }
     
     init(feedView: FeedView, feedLoadingView: FeedLoadingView) {
