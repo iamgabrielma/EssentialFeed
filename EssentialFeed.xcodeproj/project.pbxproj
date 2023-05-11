@@ -59,8 +59,8 @@
 		6869AAA529E11BB600377479 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869AAA429E11BB600377479 /* EssentialFeedAPIEndToEndTests.swift */; };
 		6869AAA629E11BB600377479 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6869AA6E29D8789600377479 /* EssentialFeed.framework */; };
 		6869AAAC29E1211700377479 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869AA9A29DFFF5900377479 /* XCTestCase+MemoryLeakTrackingHelper.swift */; };
-		68BC07312A0BF34C0099D0D6 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68BC07302A0BF34C0099D0D6 /* Feed.strings */; };
 		68BC07332A0C8A1F0099D0D6 /* FeedUIIntegrationTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC07322A0C8A1F0099D0D6 /* FeedUIIntegrationTests+Localization.swift */; };
+		68BC07342A0C8B190099D0D6 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68BC07362A0C8B190099D0D6 /* Feed.strings */; };
 		68E42EA729FE39DA00D27A8E /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EA629FE39DA00D27A8E /* UIImage+TestHelpers.swift */; };
 		68E42EA929FE3A8800D27A8E /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EA829FE3A8800D27A8E /* UIRefreshControl+TestHelpers.swift */; };
 		68E42EAB29FE3AEB00D27A8E /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E42EAA29FE3AEB00D27A8E /* UIButton+TestHelpers.swift */; };
@@ -153,8 +153,8 @@
 		6869AA9C29E1148500377479 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		6869AAA229E11BB600377479 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6869AAA429E11BB600377479 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
-		68BC07302A0BF34C0099D0D6 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
 		68BC07322A0C8A1F0099D0D6 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
+		68BC07352A0C8B190099D0D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		68E42EA629FE39DA00D27A8E /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		68E42EA829FE3A8800D27A8E /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		68E42EAA29FE3AEB00D27A8E /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -477,7 +477,7 @@
 				685B4B932A094A8E004DD0AC /* FeedImagePresenter.swift */,
 				685B4B952A094B53004DD0AC /* FeedLoadingViewModel.swift */,
 				685B4B972A094B8E004DD0AC /* FeedViewModel.swift */,
-				68BC07302A0BF34C0099D0D6 /* Feed.strings */,
+				68BC07362A0C8B190099D0D6 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -680,7 +680,7 @@
 			files = (
 				685B4B902A091C86004DD0AC /* Feed.storyboard in Resources */,
 				685B4B922A091D96004DD0AC /* Feed.xcassets in Resources */,
-				68BC07312A0BF34C0099D0D6 /* Feed.strings in Resources */,
+				68BC07342A0C8B190099D0D6 /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +837,17 @@
 			targetProxy = 6869AAA729E11BB600377479 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68BC07362A0C8B190099D0D6 /* Feed.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68BC07352A0C8B190099D0D6 /* en */,
+			);
+			name = Feed.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6837FCF829ED68DC003B8EDD /* Debug */ = {
