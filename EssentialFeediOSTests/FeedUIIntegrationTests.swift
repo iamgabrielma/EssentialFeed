@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTests.swift
+//  FeedUIIntegrationTests.swift
 //  EssentialFeediOSTests
 //
 //  Created by Gabriel Maldonado Almendra on 22/4/23.
@@ -10,7 +10,15 @@ import UIKit
 import EssentialFeed
 import EssentialFeediOS
 
-final class FeedViewControllerTests: XCTestCase {
+final class FeedUIIntegrationTests: XCTestCase {
+    
+    func test_feedView_hasTitle() {
+        let (sut, _) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.title, localized("FEED_VIEW_TITLE"))
+    }
     
     func test_loadFeedActions_requesFeedFromLoader() {
         let (sut, loader) = makeSUT()
@@ -347,7 +355,7 @@ private extension FeedImageCell {
     
 // MARK: - Test Helpers
 //
-private extension FeedViewControllerTests {
+private extension FeedUIIntegrationTests {
     
     func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: FeedViewController, loader: LoaderSpy) {
         let loader = LoaderSpy()
